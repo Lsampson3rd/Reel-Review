@@ -1,0 +1,6 @@
+<div class="dark:text-gray-100">
+  @for(movie of movies; track movie.id) {
+  <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="" />
+  <h3>{{ movie.original_title }}</h3>
+  }
+</div>
